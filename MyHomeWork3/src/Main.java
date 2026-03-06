@@ -48,19 +48,19 @@ public class Main {
                 System.out.println("frog = " + frog);
 
         System.out.println ("              Test 6");
-        var Man1 = 78.2;
-        var Man2 = 82.7;
+        var man1 = 78.2;
+        var man2 = 82.7;
         var unionMass = 0.0;
         var weightDifference = 0.0;
         var remainsWeightDifference = 0.0;
 
-        unionMass = Man1 + Man2;
+        unionMass = man1 + man2;
             System.out.println("Общая масса = " + unionMass);
-        weightDifference = Man2 - Man1;
+        weightDifference = man2 - man1;
         System.out.println("Разница веса = " + weightDifference);
 
         System.out.println ("              Test 7");
-        remainsWeightDifference = Man2 % Man1;
+        remainsWeightDifference = man2 % man1;
         System.out.println("Остаток от деления между двумя весами = " + remainsWeightDifference);
 
         System.out.println ("              Test 8");
@@ -70,26 +70,26 @@ public class Main {
         System.out.println ("              Test 9");
         var nHours = 640;//общее количество часов
         var jobDay = 8;//рабочий день
-        var x_Man = 0;//искомое количество работников
-        x_Man = nHours / jobDay;
-        System.out.println("Всего работников в компании " + x_Man + " человек!!!");
+        var xMan = 0;//искомое количество работников
+        xMan = nHours / jobDay;
+        System.out.println("Всего работников в компании " + xMan + " человек!!!");
 
 //Посчитайте, сколько часов работы должно быть поделено между сотрудниками, если в компании работает
 // на 94 человека больше. Выведите результат задачи в консоль в формате: «Если в компании работает … человек,
 // то всего … часов работы может быть поделено между сотрудниками».
         System.out.println ("              Test 10");
-        var o_Man = 94;//увеличение количества людей в компании
-        var x_Hours = 0;//искомое количество часов
+        var oMan = 94;//увеличение количества людей в компании
+        var xHours = 0;//искомое количество часов
         var unionMan = 0;//общее количество людей в компании
-        x_Hours = (x_Man + o_Man) * 8;
-        unionMan = x_Man + o_Man;
+        xHours = (xMan + oMan) * 8;
+        unionMan = xMan + oMan;
         //этот вариант явно не лучший, так как осуществляются лишние вычисления
         // лучше по идее так:
-        //UnionMan = X_man + O_Man;
-        //X_Hours = UnionMan * 8;
+        //UnionMan = xMan + oMan;
+        //X_Hours = unionMan * 8;
         //так мешьше будут затрагиваться вычислительные мощности, но для этого кода без разници, так как расчет не
         // сложный, оставил так!!! Если это не важно!
-        System.out.println("Если в компании работает " + unionMan + " человека, то всего "+ x_Hours +" часов работы может быть поделено между сотрудниками");
+        System.out.println("Если в компании работает " + unionMan + " человека, то всего "+ xHours +" часов работы может быть поделено между сотрудниками");
 
     }
 }
